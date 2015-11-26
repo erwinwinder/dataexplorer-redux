@@ -56,6 +56,7 @@ To try it out:
 > git clone git@github.com:fdlk/dataexplorer-redux.git
 > npm install
 > npm start
+```
 
 Surf to http://localhost:3000/ using a relatively modern browser.
 You can inspect the current state and see the state changes if you open up the console.
