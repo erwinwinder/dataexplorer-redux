@@ -6,16 +6,18 @@ export default class Picker extends Component {
 
     return (
       <span>
-          {value &&<h1>{value.label}</h1>}
-          {value &&<p>{value.description}</p>}
-        <select onChange={e => onChange(e.target.value)}
-                value={value && value.id}>
+          {value && <h1>{value.label}</h1>}
+          {value && <p>{value.description}</p>}
+
+        <select onChange={e => onChange(options.find(o=> e.target.value === o.fullName))}
+                value={value && value.fullName}>
           {options.map(option =>
-            <option value={option.id} key={option.id}>
+            <option value={option.fullName} key={option.fullName}>
               {option.label}
             </option>)
           }
         </select>
+
       </span>
     )
   }

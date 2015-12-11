@@ -27,7 +27,7 @@ export default class Attributes extends Component {
 Attributes.propTypes = {
     attributes: PropTypes.array.isRequired,
     onSelectionChanged: PropTypes.func.isRequired,
-    attributeSelectionChange: PropTypes.array.isRequired
+    attributeSelectionChange: PropTypes.func.isRequired
 };
 
 class Attribute extends Component {

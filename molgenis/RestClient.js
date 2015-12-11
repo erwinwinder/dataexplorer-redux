@@ -1,7 +1,7 @@
 // molgenis REST API client
 import $ from 'jquery';
 
-class RestClient {
+class RestClientClass {
     get(entity, options) {
         let url = this.apiUrl + '/v1/' + entity;
         if (options.attributes) {
@@ -42,4 +42,5 @@ class RestClient {
     }
 }
 
-export default RestClient;
+var RestClient = new RestClientClass()
+module.exports = RestClient;
